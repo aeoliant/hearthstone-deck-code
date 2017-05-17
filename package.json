@@ -1,0 +1,15 @@
+{
+  "name": "hearthstone-deck-decode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "browserify src/decoder.js -s decoder -o index.js",
+    "watch": "watchify src/decoder.js -s decoder -o index.js"
+  },
+  "author": "aeoliant",
+  "devDependencies": {
+    "browserify": "^14.3.0",
+    "watchify": "^3.9.0"
+  }
+}
