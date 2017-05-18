@@ -9,18 +9,55 @@
 </head>
 <body>
   <div class="container">
+    <!--------------->
     <div class="row">
-    <h1>Hearthstone Deck Decoder</h1>
-    <div class="form-group">
-      <label for="encoded">Encoded Deck</label>
-      <input type="text" class="form-control" id="encoded" value="AAECAR8GxwPJBLsFmQfZB/gIDI0B2AGoArUDhwSSBe0G6wfbCe0JgQr+DAA=">
+      <h1 class="text-center">Hearthstone Deck Decoder</h1>
     </div>
-    <div class="form-group">
-      <button id="decode" type="submit" class="btn btn-default">Decode!</button>
+    <!--------------->
+    <div class="row">
+
+      <h2>Decode</h2>
+      <hr/>
+
+      <div class="form-group">
+        <label for="encoded">Encoded Deck</label>
+        <input type="text" class="form-control" id="encoded" value="AAECAR8GxwPJBLsFmQfZB/gIDI0B2AGoArUDhwSSBe0G6wfbCe0JgQr+DAA=">
+      </div>
+
+      <div class="form-group">
+        <button id="decode" type="submit" class="btn btn-default">Decode!</button>
+      </div>
+
+      <div class="well hidden" id="decklist">
+      </div>
+      <div class="form-group hidden">
+        <button id="hideDeckList" type="submit" class="btn btn-default">Clear</button>
+      </div>
+
     </div>
-    <div id="decklist">
+    <!--------------->
+    <div class="row">
+
+      <h2>Encode</h2>
+      <hr/>
+
+      <div class="form-group">
+        <label for="decoded">Deck</label>
+        <textarea type="text" class="form-control" id="decoded" value="Patches the Pirate x30"></textarea>
+      </div>
+
+      <div class="form-group">
+        <button id="encode" type="submit" class="btn btn-default">Encode!</button>
+      </div>
+
+      <div class="well hidden" id="encodedDecklist">
+      </div>
+      <div class="form-group hidden">
+        <button id="hideEncodedDeckList" type="submit" class="btn btn-default">Clear</button>
+      </div>
+
     </div>
-    </div>
+    <!--------------->
   </div>
   <script src="src/stable.js"></script>
   <script src="index.js"></script>

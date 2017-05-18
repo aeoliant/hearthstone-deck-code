@@ -1,7 +1,9 @@
-var decode = require('./decoder');
+var decoder = require('./decoder');
 
 var encoded = 'AAECAR8GxwPJBLsFmQfZB/gIDI0B2AGoArUDhwSSBe0G6wfbCe0JgQr+DAA=';
 
-var cards = decode(encoded);
+var cards = decoder.decode(encoded);
 
-console.log(cards);
+var otherCards = decoder.encode(cards);
+
+console.log(otherCards);
